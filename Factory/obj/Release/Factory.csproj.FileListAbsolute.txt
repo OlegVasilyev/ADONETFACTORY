@@ -1,0 +1,14 @@
+C:\Users\User\documents\visual studio 2017\Projects\Factory\Factory\bin\Release\Factory.mdf
+C:\Users\User\documents\visual studio 2017\Projects\Factory\Factory\bin\Release\Factory_log.ldf
+C:\Users\User\documents\visual studio 2017\Projects\Factory\Factory\bin\Release\Factory.exe.config
+C:\Users\User\documents\visual studio 2017\Projects\Factory\Factory\bin\Release\Factory.exe
+C:\Users\User\documents\visual studio 2017\Projects\Factory\Factory\bin\Release\Factory.pdb
+C:\Users\User\documents\visual studio 2017\Projects\Factory\Factory\obj\Release\Factory.Properties.Resources.resources
+C:\Users\User\documents\visual studio 2017\Projects\Factory\Factory\obj\Release\Factory.UserForm.resources
+C:\Users\User\documents\visual studio 2017\Projects\Factory\Factory\obj\Release\Factory.csproj.GenerateResource.Cache
+C:\Users\User\documents\visual studio 2017\Projects\Factory\Factory\obj\Release\Factory.exe
+C:\Users\User\documents\visual studio 2017\Projects\Factory\Factory\obj\Release\Factory.pdb
+C:\Users\User\documents\visual studio 2017\Projects\Factory\Factory\bin\Release\FactorySet.Designer.cs
+C:\Users\User\documents\visual studio 2017\Projects\Factory\Factory\bin\Release\FactorySet.xsc
+C:\Users\User\documents\visual studio 2017\Projects\Factory\Factory\bin\Release\FactorySet.xsd
+C:\Users\User\documents\visual studio 2017\Projects\Factory\Factory\bin\Release\FactorySet.xss
