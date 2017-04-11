@@ -47,7 +47,7 @@ namespace Factory
 
         private void SendFurniture_Click(object sender, EventArgs e)
         {
-            dal.SubjectIsComplete(id);
+            dal.EditStatusOrder(id, "Можете забирать!");
             this.Close();
             Console.WriteLine("Furniture send!");
         }

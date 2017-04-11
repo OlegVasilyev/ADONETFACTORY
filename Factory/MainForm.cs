@@ -21,13 +21,14 @@ namespace Factory
 
             if (role == Role.Clinet)
             {
-                dataGridOrder.ContextMenuStrip.Enabled = false;
+                dataGridOrder.ContextMenuStrip.Items[0].Enabled = false;
                 AddCLinetButton.Hide();
                 dataGridCLient.ContextMenuStrip.Enabled = false;
             }
             if (role == Role.Worker)
             {
                 AddCLinetButton.Hide();
+                dataGridOrder.ContextMenuStrip.Items[1].Enabled = false;
                 dataGridCLient.ContextMenuStrip.Enabled = false;
             }
             if (role == Role.Manager)
@@ -60,9 +61,8 @@ namespace Factory
 
         private void взятьРаботуToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (dal.EditStatusOrder((int)this.dataGridCLient.CurrentRow.Cells["Id"].Value))
+            if (dal.EditStatusOrder((int)this.dataGridCLient.CurrentRow.Cells["Id"].Value, "В процессе!"))
             {
-                dataGridOrder.DataSource = dal.GetOrder((int)this.dataGridCLient.CurrentRow.Cells["Id"].Value);
                 WorkForm workform = new WorkForm((int)this.dataGridOrder.CurrentRow.Cells["Id"].Value, this.dataGridOrder.CurrentRow.Cells["Type"].Value.ToString());
                 workform.ShowDialog();
                 dataGridOrder.DataSource = dal.GetOrder((int)this.dataGridCLient.CurrentRow.Cells["Id"].Value);
@@ -178,7 +178,6 @@ namespace Factory
                     {
                         this.dataGridOrder.Rows[row8.Index].DefaultCellStyle.BackColor = Color.Green;
                     }
-                    this.NextSearchButton.Enabled = true;
                 }
             }
             else
@@ -235,6 +234,15 @@ namespace Factory
             {
                 this.dataGridCLient[e.ColumnIndex, e.RowIndex].Style.BackColor = Color.Aqua;
             }
+        }
+
+        private void забToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PayForm payform = new PayForm((int)this.dataGridOrder.CurrentRow.Cells["Id"].Value, (decimal)this.dataGridOrder.CurrentRow.Cells["Price"].Value);
+            payform.ShowDialog();
+            dal.EditStatusOrder((int)this.dataGridCLient.CurrentRow.Cells["Id"].Value, "Оплачено!");
+            dataGridOrder.DataSource = dal.GetOrder((int)this.dataGridCLient.CurrentRow.Cells["Id"].Value);
+
         }
     }
 }

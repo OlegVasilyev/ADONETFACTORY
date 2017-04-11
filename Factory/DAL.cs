@@ -138,7 +138,7 @@ namespace Factory
                 {
                     ParameterName = "Price",
                     Value = price,
-                    SqlDbType = SqlDbType.NVarChar
+                    SqlDbType = SqlDbType.Decimal
                 };
                 command.Parameters.Add(parameter);
                 parameter = new SqlParameter
@@ -183,7 +183,7 @@ namespace Factory
             }
             return false;
         }
-        public bool EditStatusOrder(int id)
+        public bool EditStatusOrder(int id, string status)
         {
             string cmdText = string.Format("UPDATE [Order] SET [Status] = @changeStatus WHERE [Id] = @id");
             using (SqlConnection connection = new SqlConnection(this.ConnectionString))
@@ -191,32 +191,7 @@ namespace Factory
                 SqlCommand command = new SqlCommand(cmdText, connection);
                 SqlParameter param = new SqlParameter { ParameterName = "id", Value = id, SqlDbType = SqlDbType.Int };
                 command.Parameters.Add(param);
-                param = new SqlParameter { ParameterName = "changeStatus", Value = "В процессе!", SqlDbType = SqlDbType.NVarChar };
-                command.Parameters.Add(param);
-
-                try
-                {
-                    connection.Open();
-                    if (command.ExecuteNonQuery() == 1)
-                    {
-                        return true;
-                    }
-                }
-                catch
-                {
-                }
-            }
-            return false;
-        }
-        public bool SubjectIsComplete(int id)
-        {
-            string cmdText = string.Format("UPDATE [Order] SET [Status] = @changeStatus WHERE [Id] = @id");
-            using (SqlConnection connection = new SqlConnection(this.ConnectionString))
-            {
-                SqlCommand command = new SqlCommand(cmdText, connection);
-                SqlParameter param = new SqlParameter { ParameterName = "id", Value = id, SqlDbType = SqlDbType.Int };
-                command.Parameters.Add(param);
-                param = new SqlParameter { ParameterName = "changeStatus", Value = "Можете забирать!", SqlDbType = SqlDbType.NVarChar };
+                param = new SqlParameter { ParameterName = "changeStatus", Value = status, SqlDbType = SqlDbType.NVarChar };
                 command.Parameters.Add(param);
 
                 try

@@ -18,3 +18,24 @@ C:\Users\User\Documents\Visual Studio 2017\Projects\Factory\Factory\bin\Debug\En
 C:\Users\User\Documents\Visual Studio 2017\Projects\Factory\Factory\bin\Debug\ru\EntityFramework.resources.dll
 C:\Users\User\Documents\Visual Studio 2017\Projects\Factory\Factory\obj\Debug\Factory.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\Visual Studio 2017\Projects\Factory\Factory\obj\Debug\Factory.WorkForm.resources
+D:\Factory\Factory\bin\Debug\Factory.mdf
+D:\Factory\Factory\bin\Debug\Factory_log.ldf
+D:\Factory\Factory\bin\Debug\Factory.exe.config
+D:\Factory\Factory\bin\Debug\Factory.exe
+D:\Factory\Factory\bin\Debug\Factory.pdb
+D:\Factory\Factory\bin\Debug\EntityFramework.dll
+D:\Factory\Factory\bin\Debug\EntityFramework.SqlServer.dll
+D:\Factory\Factory\bin\Debug\EntityFramework.xml
+D:\Factory\Factory\bin\Debug\EntityFramework.SqlServer.xml
+D:\Factory\Factory\bin\Debug\ru\EntityFramework.resources.dll
+D:\Factory\Factory\obj\Debug\Factory.ClientForm.resources
+D:\Factory\Factory\obj\Debug\Factory.MainForm.resources
+D:\Factory\Factory\obj\Debug\Factory.OrderForm.resources
+D:\Factory\Factory\obj\Debug\Factory.Properties.Resources.resources
+D:\Factory\Factory\obj\Debug\Factory.UserChooseForm.resources
+D:\Factory\Factory\obj\Debug\Factory.WorkForm.resources
+D:\Factory\Factory\obj\Debug\Factory.csproj.GenerateResource.Cache
+D:\Factory\Factory\obj\Debug\Factory.exe
+D:\Factory\Factory\obj\Debug\Factory.pdb
+D:\Factory\Factory\obj\Debug\Factory.PayForm.resources
+D:\Factory\Factory\obj\Debug\Factory.csprojResolveAssemblyReference.cache

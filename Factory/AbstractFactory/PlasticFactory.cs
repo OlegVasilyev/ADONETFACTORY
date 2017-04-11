@@ -13,7 +13,7 @@ namespace Factory.AbstractFactory
     {
         public PlasticFactory()
         {
-            Console.WriteLine("Create PlasricFactory");
+            Console.WriteLine("Create PlasticFactory");
         }
         public override AbstractCarcass.AbstractCarcass CreateCarcass()
         {

@@ -37,7 +37,6 @@
             this.взятьРаботуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AddCLinetButton = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.NextSearchButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBoxColumn = new System.Windows.Forms.ComboBox();
             this.CheckInDataBase = new System.Windows.Forms.CheckBox();
@@ -45,6 +44,7 @@
             this.searchText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxTable = new System.Windows.Forms.ComboBox();
+            this.забToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridCLient)).BeginInit();
             this.contextMenuAddOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridOrder)).BeginInit();
@@ -90,15 +90,16 @@
             // contextMenuForJob
             // 
             this.contextMenuForJob.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.взятьРаботуToolStripMenuItem});
+            this.взятьРаботуToolStripMenuItem,
+            this.забToolStripMenuItem});
             this.contextMenuForJob.Name = "contextMenuForJob";
             this.contextMenuForJob.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.contextMenuForJob.Size = new System.Drawing.Size(145, 26);
+            this.contextMenuForJob.Size = new System.Drawing.Size(153, 70);
             // 
             // взятьРаботуToolStripMenuItem
             // 
             this.взятьРаботуToolStripMenuItem.Name = "взятьРаботуToolStripMenuItem";
-            this.взятьРаботуToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.взятьРаботуToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.взятьРаботуToolStripMenuItem.Text = "Взять работу";
             this.взятьРаботуToolStripMenuItem.Click += new System.EventHandler(this.взятьРаботуToolStripMenuItem_Click);
             // 
@@ -114,7 +115,6 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.NextSearchButton);
             this.groupBox7.Controls.Add(this.label2);
             this.groupBox7.Controls.Add(this.comboBoxColumn);
             this.groupBox7.Controls.Add(this.CheckInDataBase);
@@ -128,16 +128,6 @@
             this.groupBox7.TabIndex = 6;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Поиск";
-            // 
-            // NextSearchButton
-            // 
-            this.NextSearchButton.Enabled = false;
-            this.NextSearchButton.Location = new System.Drawing.Point(565, 27);
-            this.NextSearchButton.Name = "NextSearchButton";
-            this.NextSearchButton.Size = new System.Drawing.Size(71, 22);
-            this.NextSearchButton.TabIndex = 10;
-            this.NextSearchButton.Text = "Next";
-            this.NextSearchButton.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -204,6 +194,13 @@
             this.comboBoxTable.TabIndex = 0;
             this.comboBoxTable.TextChanged += new System.EventHandler(this.comboBoxTable_TextChanged);
             // 
+            // забToolStripMenuItem
+            // 
+            this.забToolStripMenuItem.Name = "забToolStripMenuItem";
+            this.забToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.забToolStripMenuItem.Text = "Забрать товар";
+            this.забToolStripMenuItem.Click += new System.EventHandler(this.забToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -235,7 +232,6 @@
         private System.Windows.Forms.ToolStripMenuItem взятьРаботуToolStripMenuItem;
         private System.Windows.Forms.Button AddCLinetButton;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Button NextSearchButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBoxColumn;
         private System.Windows.Forms.CheckBox CheckInDataBase;
@@ -243,5 +239,6 @@
         private System.Windows.Forms.TextBox searchText;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBoxTable;
+        private System.Windows.Forms.ToolStripMenuItem забToolStripMenuItem;
     }
 }
